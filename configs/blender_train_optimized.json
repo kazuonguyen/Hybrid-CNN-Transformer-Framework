@@ -1,0 +1,42 @@
+{
+    "backbone": "resnet",
+    "model_name": "edp2022",
+    "data_path": "c:\\code\\LINGMI-MR\\data\\blender_colon",
+    "val_path": null,
+    "log_dir": "./edp2022",
+    "num_epochs": 50,
+    "log_frequency": 1,
+    "save_frequency": 5,
+    "png": true,
+    "learning_rate": 0.001,
+    "lr_decade_coeff": 0.88,
+    "betas": [0.9, 0.999],
+    "weight_decay": 0.01,
+
+    "num_layers": 18,
+    "height": 320,
+    "width": 320,
+    "frame_ids": [0],
+    "scales": [0],
+
+    "batch_size": 16,
+    "num_workers": 4,
+
+    "use_depth_loss": true,
+    "use_smooth_loss": true,
+    "use_normal_loss": false,
+
+    "weight_depth_loss": 1,
+    "weight_smooth_loss": 0.5,
+    "weight_normal_pc_loss": 0.25,
+    "weight_normal_norm_loss": 0.25,
+
+    "test": false,
+    
+    "_comments": {
+        "batch_size": "Tăng từ 6 lên 16 cho RTX 5070 Ti",
+        "num_workers": "Tăng từ 1 lên 4 để load data nhanh hơn",
+        "learning_rate": "Giảm từ 0.01 xuống 0.001 để stable hơn",
+        "save_frequency": "Lưu checkpoint mỗi 5 epoch thay vì mỗi epoch"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "log_path": "lightning_logs\\version_0",
+    "image_path": "c:\\code\\LINGMI-MR\\data\\blender_colon\\images",
+    "intrinsic_path": "assets\\blender.yaml",
+    "ext": ".png",
+    "output_path": "./output",
+    "show": false
+}
