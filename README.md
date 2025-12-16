@@ -1,6 +1,9 @@
-## A geometry-aware deep network for depth estimation in monocular endoscopy
-[[ Paper ](https://doi.org/10.1016/j.engappai.2023.105989)] [[ Project ](https://github.com/YYM-SIA/LINGMI-MR)]  
-  
+# Hybrid CNN-Transformer Framework for Depth Estimation in Monocular Endoscopy
+
+**Author:** Nguyen Quoc Hung
+
+A novel hybrid deep learning framework combining Swin Transformer encoder with CNN decoder for accurate depth estimation in endoscopic images. This work extends geometry-aware depth estimation with transformer-based global context modeling and multi-scale supervision.
+
 ![alt](files/structure.jpg)
   
 
@@ -78,7 +81,18 @@ Hybrid|Swin-Tiny|CNN|31.6M|**0.80-1.0**|**0.70-0.85**|**0.22-0.25**|**0.82-0.85*
 </video>
 
 ## Citation
-If you find our work useful please consider citing our paper:
+If you use this Hybrid CNN-Transformer framework in your research, please cite:
+```
+@misc{nguyen2024hybrid,
+  title={Hybrid CNN-Transformer Framework for Depth Estimation in Monocular Endoscopy},
+  author={Nguyen Quoc Hung},
+  year={2024},
+  note={GitHub repository}
+}
+```
+
+## References
+This work builds upon and references the following papers:
 ```
 @article{YANG2023105989,
 title = {A geometry-aware deep network for depth estimation in monocular endoscopy},
@@ -87,11 +101,21 @@ journal = {Engineering Applications of Artificial Intelligence},
 volume = {122},
 pages = {105989},
 year = {2023},
+doi = {10.1016/j.engappai.2023.105989}
 }
 ```
 
+[[ Reference Paper ](https://doi.org/10.1016/j.engappai.2023.105989)] [[ Reference Project ](https://github.com/YYM-SIA/LINGMI-MR)]
+
 ## Acknowledgements
-Thanks to Shuwei Shao for his excellent work [AF-SfMLearner](https://github.com/ShuweiShao/AF-SfMLearner), and Jin Han Lee for his [BTS](https://github.com/cleinc/bts), Ozyoruk for his [EndoSLAM](https://github.com/CapsuleEndoscope/EndoSLAM), Recasens for his [Endo-Depth-and-Motion](https://davidrecasens.github.io/EndoDepthAndMotion), Godard for his [Monodepth2](https://github.com/nianticlabs/monodepth2), and Microsoft Research for [Swin Transformer](https://github.com/microsoft/Swin-Transformer).
+This implementation references and builds upon several excellent works:
+- Yang et al. for the geometry-aware depth estimation baseline [LINGMI-MR](https://github.com/YYM-SIA/LINGMI-MR)
+- Shuwei Shao for [AF-SfMLearner](https://github.com/ShuweiShao/AF-SfMLearner)
+- Jin Han Lee for [BTS](https://github.com/cleinc/bts)
+- Ozyoruk for [EndoSLAM](https://github.com/CapsuleEndoscope/EndoSLAM) dataset
+- Recasens for [Endo-Depth-and-Motion](https://davidrecasens.github.io/EndoDepthAndMotion)
+- Godard for [Monodepth2](https://github.com/nianticlabs/monodepth2)
+- Microsoft Research for [Swin Transformer](https://github.com/microsoft/Swin-Transformer)
 
 ---
 
